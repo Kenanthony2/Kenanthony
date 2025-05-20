@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ken Anthony</title>
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+    <!--Bootstrap ================================================== -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+    <!--vendor css ================================================== -->
+    <link rel="stylesheet" type="text/css" href="css/vendor.css">
+
+    <!-- Style Sheet ================================================== -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <!-- Google Fonts ================================================== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+</head>
+
+<body>
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+
+        <symbol id="box" viewBox="0 0 24 24">
+            <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.5"
+                d="m15.578 3.382l2 1.05c2.151 1.129 3.227 1.693 3.825 2.708C22 8.154 22 9.417 22 11.942v.117c0 2.524 0 3.787-.597 4.801c-.598 1.015-1.674 1.58-3.825 2.709l-2 1.049C13.822 21.539 12.944 22 12 22s-1.822-.46-3.578-1.382l-2-1.05c-2.151-1.129-3.227-1.693-3.825-2.708C2 15.846 2 14.583 2 12.06v-.117c0-2.525 0-3.788.597-4.802c.598-1.015 1.674-1.58 3.825-2.708l2-1.05C10.178 2.461 11.056 2 12 2s1.822.46 3.578 1.382ZM21 7.5l-4 2M12 12L3 7.5m9 4.5v9.5m0-9.5l4.5-2.25l.5-.25m0 0V13m0-3.5l-9.5-5" />
+        </symbol>
+        <symbol id="arrow-left" viewBox="0 0 256 256">
+            <path fill="currentColor"
+                d="M220 128a4 4 0 0 1-4 4H49.66l65.17 65.17a4 4 0 0 1-5.66 5.66l-72-72a4 4 0 0 1 0-5.66l72-72a4 4 0 0 1 5.66 5.66L49.66 124H216a4 4 0 0 1 4 4" />
+        </symbol>
+        <symbol id="arrow-right" viewBox="0 0 256 256">
+            <path fill="currentColor"
+                d="m218.83 130.83l-72 72a4 4 0 0 1-5.66-5.66L206.34 132H40a4 4 0 0 1 0-8h166.34l-65.17-65.17a4 4 0 0 1 5.66-5.66l72 72a4 4 0 0 1 0 5.66" />
+        </symbol>
+        <symbol id="search" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+            <path fill="currentColor"
+                d="M19 3C13.488 3 9 7.488 9 13c0 2.395.84 4.59 2.25 6.313L3.281 27.28l1.439 1.44l7.968-7.969A9.922 9.922 0 0 0 19 23c5.512 0 10-4.488 10-10S24.512 3 19 3zm0 2c4.43 0 8 3.57 8 8s-3.57 8-8 8s-8-3.57-8-8s3.57-8 8-8z" />
+        </symbol>
+        <symbol xmlns="http://www.w3.org/2000/svg" id="close" viewBox="0 0 16 16">
+            <path
+                d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z" />
+        </symbol>
+    </svg>
+
+    <div class="preloader text-white fs-6 text-uppercase overflow-hidden"></div>
+
+    </div>
+
+
+    <nav id="header-nav" class="navbar navbar-expand-lg container-fluid bg-white bg-opacity-50 py-4 fixed-top">
+        <div class="container">
+            <h1 class="logo">KEN ANTHONY</h1>
+
+            <button class="navbar-toggler shadow-none" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                    <button type="button" class="btn-close text-reset shadow-none" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav text-center align-items-center justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active pe-lg-5" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link pe-lg-5" href="#contact">Contact</a>
+                        </li>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </nav>
+
+    <section id="hero" class="padding-large jarallax">
+        <div class="container" data-aos="fade-up">
+            <div class="row text-start">
+                <div class="col-lg-5">
+                    <p>
+                        Tableau
+                    </p>
+                    <h2 class="display-1 fw-bold">
+                        Al Sadd Global <span class="text-primary">Trade Ltd</span>
+                    </h2>
+                    <p>
+                    </p>
+                    
+                </div>
+            </div>
+        </div>
+        <img src="images/coffee bean.jpg" alt="banner" class="jarallax-img">
+    </section>
+
+    <section id="hire">
+        <div class="container padding-medium">
+                <div class="col-lg-5 mt-5 mt-lg-0" data-aos="fade-right">
+    <h2>Table of Content</h2>
+    <ul>
+        <li><a href="#project-background">Project Background</a></li>
+        <li><a href="#executive-summary">Executive Summary</a></li>
+        <li><a href="#insight-deep-dive">Insight Deep Dive</a>
+            <ul>
+                <li><a href="#customer-details">Customer Details</a></li>
+                <li><a href="#2023-key-metrics">2023 Key Metrics</a></li>
+                <li><a href="#2024-key-metrics">2024 Key Metrics</a></li>
+            </ul>
+        </li>
+        <li><a href="#recommendations">Recommendations</a></li>
+        <li><a href="#clarifying-questions">Clarifying Questions, Assumptions and Caveats</a></li>
+        <li><a href="#skill-used">Tool Used</a></li>
+        <li><a href="#contacts">Contacts</a></li>
+        <li><a href="#">Interactive dashboard</a></li>
+        <li><a href="#">Dataset</a></li>
+    </ul>
+
+    <section id="project-background" class="section">
+        <h2>Project Background</h2>
+        <p>Al Sadd Global Trade Ltd, incorporated in Saudi Arabia in 2012, is a supplier of agricultural primary products. Our company ran a strategic discount campaign from 2023-2024 across different cities in the country. I'm partnering with the marketing team to extract insights and offer recommendations on the outcome of the discount campaign and improve performance across sales, product and marketing teams.</p>
+    </section>
+
+    <section id="executive-summary" class="section">
+        <h2>Executive Summary</h2>
+        <p>In the 2023–2024 discount campaign, Al Sadd Global Trade Ltd generated 630K in coffee bean total sales across 100 customers in 10  cities in the country, with 97% participation driving 98% of total sales underscoring extremely elastic demand for promotions.
+             Seasonality was pronounced: monthly sales peaked in June (57,208) and March (56,519), and troughed in April (47,882) and October (47,432), maybe a reflection of cultural and climatic consumption cycles. On a daily basis, revenue held steady between 10k–25k. 
+             By product types, Colombian beans led with roughly 22% of the portfolio share, followed close by Costa Rican also 22%, Ethiopian 21%, Guatemalan 16%, and Brazilian with also 16%.
+              Geographically, Hail recorded the highest overall sale (77k), whereas Tabuk lagged (51k), highlighting prime targets for hyper local activations/promotions.</p>
+        <section id="portfolio" class="padding-medium container-fluid pt-0" data-aos="fade-up">
+    
+       <img src="images/Coffee Sales Dashboard.png" alt="Coffee Sales Dashboard" style="max-width: 200%">
+       <p>This screenshot highlights overall performance metrics for both 2023-2024 discount campaign.</p>
+
+    </section> 
+
+    <section id="insight-deep-dive" class="section">
+        <h2>Insight deep dive</h2>
+
+        <section id="customer-details" class="subsection">
+            <p><h3>Customer Details</h3></p>
+            <p>The dataset provided by our Chief Marketing Officer contains customer geographic locations and purchasing behavior.</p>
+        </section>
+
+        <section id="2023-key-metrics" class="subsection">
+            <h3>2023 Key Metrics</h3>
+            <ul>
+                <li>Total Sale: 313k</li>
+                <li>Active Customer Base: 98 unique buyers transacted in 2023.</li>
+                <li>Discount Penetration:95 customers redeemed at least one promotion (97%), driving 99% of total sales.</li>
+                <li>Non Discount: The 3 customers who never used discounts accounted for 1.3% of revenue.</li>
+            </ul>
+
+            <h3>Sales Performance</h3>
+            <p>Daily Sales: Mostly between 12K and 5K with occasional spikes and dips</p>
+            <p>Monthly Sales:</p>
+            <ul>
+                <li>Peak Month: March (32k)</li>
+                <li>Trough Month: December (23k)</li>
+            </ul>
+            <h4>Top Coffee Beans by Sales</h4>
+            <ul>
+                <li>Costa Rica: 75k</li>
+                <li>Colombian: 68k</li>
+                <li>Guatemala: 59k</li>
+                <li>Ethiopian: 55k</li>
+                <li>Brazilian: 54k</li>
+            </ul>
+            <h4>Sales Performance by City</h4>
+            <ul>
+                <li>Top Performing City: Jeddah (41k)</li>
+                <li>Underperforming City: Abha(19k)</li>
+            </ul>
+            <img src="images/2023 dashboard.png" alt="Coffee Sales Dashboard" style="max-width: 200%">
+            <p>This screenshot highlights key performance metrics from the 2023 discount campaign.</p>
+        </section>
+
+        <section id="2024-key-metrics" class="subsection">
+            <h3>2024 Key Metrics</h3>
+            <ul>
+                <li>Total Sale: 316k</li>
+                <li>Customer Base: 98 unique transacting customers in 2024.</li>
+                <li>Discount Penetration: 96/98 customers (98%) used a discount at least once driving 99% of revenue.</li>
+                <li>Non discount: Only 2 customers declined promotions, contributing a mere 1.6% of total sales.</li>
+            </ul>
+
+            <h3>Sales Performance</h3>
+            <p>Daily Transactions: There was consitent daily sales between 7K-12K.</p>
+            <p>Monthly Sales:</p>
+            <ul>
+                <li>Peak Month: June (29k)</li>
+                <li>Trough Month: October (21k)</li>
+            </ul>
+            <h4>Top Coffee Beans by Sales</h4>
+            <ul>
+                <li>Ethiopian: 78k</li>
+                <li>Colombian: 75k</li>
+                <li>Costa Rican: 65k</li>
+                <li>Brazilian: 48k</li>
+                <li>Guatemala: 47k</li>
+            </ul>
+            <h4>Sales Performance by City</h4>
+            <ul>
+                <li>Top Performing City: Hail (46k)</li>
+                <li>Underperforming City: Buraidah (25k)</li>
+            </ul>
+             <img src="images/2024 dashboard.png" alt="Coffee Sales Dashboard" style="max-width: 200%">
+            <p>This screenshot highlights key performance metrics from the 2024 discount campaign.</p>
+        </section>
+    </section>
+
+    <section id="recommendations" class="section">
+        <h2>Recommendations</h2>
+        <li>Strategic Discounting</li>
+        <li>Inventory Prioritization</li>
+        <li>Geo Targeting</li>
+        <li>Seasonal Planning</li>
+        <li>Mobile app</li> 
+        
+        <h3>Strategic Discounting</h3>
+        <ul class="recommendation-point">
+            <li>Deploy 15–20% flash promotions during April and October.</li>
+            <li>Measure incremental lift by comparing post campaign revenue against the 3 month moving average baseline.</li>
+        </ul>
+
+        <h3>Inventory Prioritization</h3>
+        <ul class="recommendation-point">
+            <li>Allocate 40% of stocking capacity to Colombian and Costa Rican beans, based on their 2023–2024 sell through rates.</li>
+            <li>Implement dynamic reorder points via rolling 3 month velocity to minimize stockouts.</li>
+        </ul>
+
+        <h3>Geo focused Activation</h3>
+        <ul class="recommendation-point">
+            <li>Launch targeted digital ad campaigns and in store sampling in Tabuk and Abha.</li>
+            <li>Aim for a 10% Quarter on Quarter sales uplift, tracked via ZIP code level dashboards.</li>
+        </ul>
+
+        <h3>Mobile App & Loyalty</h3>
+        <ul class="recommendation-point">
+            <li>Develop a mobile app with purchase history, personalized push offers, and a tiered membership program. Target a 15% uplift in repeat purchase rate and a 20% reduction in acquisition cost within 6 months.</li>
+        </ul>
+    </section>
+
+    <section id="clarifying-questions" class="section">
+        <p><h2>Clarifying Questions, Assumptions and Caveats</h2></p>
+        <h3>Clarifying Questions</h3>
+        <ul>
+            <li>Discount Criteria Variance: What business rules determined each customer’s discount rate (e.g, volume tiers, loyalty status, first time purchase)?</li>
+            <li>Customer ID Duplication: Does each Customer ID represent a single individual with multi location orders, or is the ID reused per regional module?</li>
+            <li>New vs Returning Customer Tracking: How does our system distinguish between first time buyers and repeat purchasers via signup dates, or order history, to know if the campaign attracted new customers or just returning customers?</li>
+            <li>Pre Campaign Profit Comparison: Can we access gross margin data for the same customers in the year preceding the discount campaign, to calculate incremental profit and ROI of the discount?</li>
+        </ul>
+
+        <h3>Assumptions </h3>
+        <p>I assumed every customer id as one customer although same customer id had appeared in different other cities. This may overestimate unique customer counts and obscure geographic loyalty. I propose we use emails or phone numbers to dedupe IDs across regions.</p>
+
+        <h3>Caveats</h3>
+        <p>We need more on customer demographics (e.g., age, gender and time of purchases) than just geographical locations. Omitting demographics could bias segment analysis (e.g., age driven preferences) and limit personalization strategies. If 70% of sales came from one demographic, lacking that data means i cannot validate targeted campaigns.</p>
+    </section>
+    <h4>Conclusion</h4>
+    <p> This analysis provides clear insights into customer behavior, seasonal fluctuations and product preferences. This data underscores the importance of promotional strategies and regional analysis in optimizing sales performance.</p>
+    <section id="skill-used" class="section">
+        <h2>Tool Used</h2>
+        <p>Tableau: Built a calculated field to accurately account for discount user vs non discount users</p>
+    </section>
+
+    <section id="contacts" class="section">
+        <h2>Contacts</h2>
+            <ul>
+            <li><strong>GitHub:</strong> <a href="https://github.com/Kenanthony2" target="_blank">Kenanthony2</a></li>
+            <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/kenechukwu-kingsley-9872b1366/" target="_blank">Ken Anthony</a></li>
+            <li><strong>Email:</strong> <a href="mailto:kenanthony277@gmail.com">kenanthony277@gmail</a></li>
+            </ul>
+
+        <p>See the full interactive dashboard <a href="https://public.tableau.com/app/profile/kingsley.chimdindu/viz/CoffeeSalesDashboard_17463145193740/Coffebeansalesdashboard?publish=yes">here</a>.</p>
+        <p>See dataset  <a href="https://www.kaggle.com/datasets/halaturkialotaibi/coffee-bean-sales-dataset">here</a>.</p>
+    </section>
+    </section>
+    
+
+        
+    </section>
+    <section id="contact">
+        <div class="container padding-medium" data-aos="fade-up">
+            <div class="row justify-content-center">
+                <div class="col-md-8 text-center">
+                    <h3 class="display-1 fw-bold">
+                        Let’s work together
+                    </h3>
+                    <p>
+                        I’m available for freelance work. Have any projects in your mind? <br>
+                        Just feel free to contact me
+                    </p>
+                </div>
+            </div>
+
+            <ul class="d-flex gap-5 list-unstyled justify-content-center my-3">
+                <li>
+                    <a href="mailto:kenanthony277@gmail.com" class="contact-link" title="Email">
+                    <i class="fas fa-envelope fa-lg"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/Kenanthony2" target="_blank" class="contact-link" title="GitHub">
+                    <i class="fab fa-github fa-lg"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/kenechukwu-kingsley-9872b1366/" target="_blank" class="contact-link" title="LinkedIn">
+                    <i class="fab fa-linkedin fa-lg"></i>
+                    </a>
+                </li>
+                </ul>
+        </div>
+        <footer class="border-top border-dark-subtle py-4">
+            <div class="container d-md-flex justify-content-between align-items-center mt-3">
+                <p class="mb-0">© 2025 Ken Anthony. All rights reserved.</p>
+            </div>
+        </footer>
+    </section>
+
+
+    <!-- script ================================================== -->
+    <script src="js/jquery-1.11.0.min.js"></script>
+
+    <!-- Bootstarp script ================================================== -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+
+    <!-- Swiper script ================================================== -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <!--iconify script ================================================== -->
+    <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.7/dist/iconify-icon.min.js"></script>
+
+
+    <script src="js/plugins.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

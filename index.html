@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ken Anthony</title>
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+    <!--Bootstrap ================================================== -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+    <!--vendor css ================================================== -->
+    <link rel="stylesheet" type="text/css" href="css/vendor.css">
+
+    <!-- Style Sheet ================================================== -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <!-- Google Fonts ================================================== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+</head>
+
+<body>
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+
+        <symbol id="box" viewBox="0 0 24 24">
+            <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.5"
+                d="m15.578 3.382l2 1.05c2.151 1.129 3.227 1.693 3.825 2.708C22 8.154 22 9.417 22 11.942v.117c0 2.524 0 3.787-.597 4.801c-.598 1.015-1.674 1.58-3.825 2.709l-2 1.049C13.822 21.539 12.944 22 12 22s-1.822-.46-3.578-1.382l-2-1.05c-2.151-1.129-3.227-1.693-3.825-2.708C2 15.846 2 14.583 2 12.06v-.117c0-2.525 0-3.788.597-4.802c.598-1.015 1.674-1.58 3.825-2.708l2-1.05C10.178 2.461 11.056 2 12 2s1.822.46 3.578 1.382ZM21 7.5l-4 2M12 12L3 7.5m9 4.5v9.5m0-9.5l4.5-2.25l.5-.25m0 0V13m0-3.5l-9.5-5" />
+        </symbol>
+        <symbol id="arrow-left" viewBox="0 0 256 256">
+            <path fill="currentColor"
+                d="M220 128a4 4 0 0 1-4 4H49.66l65.17 65.17a4 4 0 0 1-5.66 5.66l-72-72a4 4 0 0 1 0-5.66l72-72a4 4 0 0 1 5.66 5.66L49.66 124H216a4 4 0 0 1 4 4" />
+        </symbol>
+        <symbol id="arrow-right" viewBox="0 0 256 256">
+            <path fill="currentColor"
+                d="m218.83 130.83l-72 72a4 4 0 0 1-5.66-5.66L206.34 132H40a4 4 0 0 1 0-8h166.34l-65.17-65.17a4 4 0 0 1 5.66-5.66l72 72a4 4 0 0 1 0 5.66" />
+        </symbol>
+        <symbol id="search" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+            <path fill="currentColor"
+                d="M19 3C13.488 3 9 7.488 9 13c0 2.395.84 4.59 2.25 6.313L3.281 27.28l1.439 1.44l7.968-7.969A9.922 9.922 0 0 0 19 23c5.512 0 10-4.488 10-10S24.512 3 19 3zm0 2c4.43 0 8 3.57 8 8s-3.57 8-8 8s-8-3.57-8-8s3.57-8 8-8z" />
+        </symbol>
+        <symbol xmlns="http://www.w3.org/2000/svg" id="close" viewBox="0 0 16 16">
+            <path
+                d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z" />
+        </symbol>
+    </svg>
+
+    <div class="preloader text-white fs-6 text-uppercase overflow-hidden"></div>
+
+    </div>
+
+
+    <nav id="header-nav" class="navbar navbar-expand-lg container-fluid bg-white bg-opacity-50 py-4 fixed-top">
+        <div class="container">
+            <h1 class="logo">KEN ANTHONY</h1>
+
+            <button class="navbar-toggler shadow-none" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                    <button type="button" class="btn-close text-reset shadow-none" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav text-center align-items-center justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active pe-lg-5" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link pe-lg-5" href="#portfolio">Project</a>
+                        <li class="nav-item">
+                            <a class="nav-link pe-lg-5" href="#contact">Contact</a>
+                        </li>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </nav>
+
+    <section id="hero" class="padding-large jarallax">
+        <div class="container" data-aos="fade-up">
+            <div class="row text-start">
+                <div class="col-lg-5">
+                    <p>
+                        Data Analyst
+                    </p>
+                    <h2 class="display-1 fw-bold">
+                        Hello I'm <span class="text-primary">Ken Anthony</span>
+                    </h2>
+                    <p>
+                        Hi, I'm Ken Anthony – a Data Analyst passionate about turning raw data into actionable insights. 
+                        Skilled in Python, SQL, Power BI, and Tableau, I transform complex datasets into compelling stories with dashboards that drive business decisions.
+                        On this portfolio, you'll find projects that showcase my journey and growth in data analytics.
+                    </p>
+                    <a href="mailto:kenanthony277@gmail.com" class="btn btn-outline-dark rounded-pill mt-4">
+                        Get In Touch
+                    </a>
+                </div>
+            </div>
+        </div>
+        <img src="images/backgroung.jpeg" alt="banner" class="jarallax-img">
+    </section>
+
+    <section id="hire">
+        <div class="container padding-medium">
+            <div class="row flex-row-reverse">
+                <div class="offset-lg-1 col-lg-6" data-aos="fade-left">
+                   
+
+
+                </div>
+                <div class="col-lg-5 mt-5 mt-lg-0" data-aos="fade-right">
+                    <h3 class="display-5 fw-bold">
+                        Why Hire Me ?
+                    </h3>
+                    <p class="pt-4">
+                        As a data analyst, I turn raw data into meaningful insights that drive smart business decisions. 
+                        With strong skills in Python, SQL, Excel, Tableau/Power BI, I don't just do numbers I tell stories with data.       
+                    </p>
+                    <p>
+                        I'm passionate about solving problems, especially within the Nigerian context, and I back every analysis with clarity, 
+                        accuracy, and actionable recommendations. Whether it's cleaning messy datasets, building dashboards, or uncovering trends,
+                         I bring curiosity, precision, and a results driven mindset to every project.
+                    </p>
+                    <div class="text-start mt-5">
+                        <a href="mailto:kenanthony277@gmail.com" class="btn btn-dark me-4">
+                            Hire Me
+                        </a>
+                        <a href="#" class="btn btn-outline-dark">
+                            Download Resume
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <section id="offer" class="position-relative padding-medium" data-aos="fade-up">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-5 text-center">
+                    <h3 class="display-5 fw-bold">
+                        What I Offer
+                    </h3>
+                    <p class="mb-5">
+                        Things that I can do for my clients.
+                    </p>
+                </div>
+            </div>
+
+            <div class="swiper offer-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide text-center">
+                        <a href="service-details.html">
+                            <div class="offer-item border mb-4 p-5">
+                                <div class="product-item position-relative">
+                                <img src="images/Microsoft-Excel-Emblem.png" alt="Excel" width="100">
+                                        <use xlink:href="#paintbrush"></use>
+                                    </svg>
+                                </div>
+                                <h4 class="mt-4">
+                                    Excel
+                                </h4>
+                                <p>
+                                    I offer fast and accurate data cleaning, analysis, reporting using formulas, 
+                                    pivot tables
+                                     and charts perfect for handling day-to-day business data.
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide text-center">
+                        <a href="service-details.html">
+                            <div class="offer-item border mb-4 p-5">
+                                <div class="product-item position-relative">
+                                    <img src="images/SQL logo.jpg" alt="SQL" width="100">
+                                        <use xlink:href="#t-shirt"></use>
+                                    </svg>
+                                </div>
+                                <h4 class="mt-4">
+                                    SQL
+                                </h4>
+                                <p>
+                                    I can write efficient queries to pull,
+                                     filter and join data from databases helping you get exactly the info you need and when you need it.
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide text-center">
+                        <a href="service-details.html">
+                            <div class="offer-item border mb-4 p-5">
+                                <div class="product-item position-relative">
+                                    <img src="images/Tableau logo.jpg" alt="Tableau" width="100">
+                                        <use xlink:href="#box"></use>
+                                    </svg>
+                                </div>
+                                <h4 class="mt-4">
+                                    Tableau
+                                </h4>
+                                <p>
+                                    I design clean, interactive dashboards that make it easy to understand 
+                                    complex data and share insights with teams and decision-makers.
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide text-center">
+                        <a href="service-details.html">
+                            <div class="offer-item border mb-4 p-5">
+                                <div class="product-item position-relative">
+                                    <img src="images/python logo.png" alt="Python" width="100">
+                                        <use xlink:href="#paintbrush"></use>
+                                    </svg>
+                                </div>
+                                <h4 class="mt-4">
+                                    Python
+                                </h4>
+                                <p>
+                                    I use Python (with libraries like pandas and matplotlib) to explore data and uncover insights.
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-pagination position-static mt-4 d-lg-none d-block"></div>
+            </div>
+            <div
+                class="position-absolute top-50 end-0 translate-middle-y me-5 mt-5 pt-5 main-slider-button-next d-lg-block d-none">
+                <svg class="arrow" width="40" height="40">
+                    <use xlink:href="#arrow-right"></use>
+                </svg>
+            </div>
+            <div
+                class="position-absolute top-50 start-0 translate-middle-y ms-5 mt-5 pt-5 main-slider-button-prev d-lg-block d-none">
+                <svg class="arrow" width="40" height="40">
+                    <use xlink:href="#arrow-left"></use>
+                </svg>
+            </div>
+    </section>
+
+    <section id="portfolio" class="padding-medium container-fluid pt-0" data-aos="fade-up">
+        <div class="text-center">
+            <h3 class="display-5 fw-bold">
+                Portfolio
+            </h3>
+        </div>
+        <div class="isotope-container row">
+            <div class="item tshirt col-md-4 p-3">
+                <div class="project-content position-relative bg-black">
+                    <img class="project-img img-fluid" src="images/coffee.jpeg" alt="img">
+                    <div class="project-description p-5 position-absolute bottom-0 start-0">
+                        <h4 class="text-white">Discount Campaign 2023-2024 Analysis</h4>
+                        <a href="Al sadd Global Trade Ltd.html" class="text-white text-decoration-underline">View Project</a>
+                    </div>
+                </div>
+            </div>
+            <div class="item branding col-md-4 p-3">
+                <div class="project-content position-relative bg-black">
+                    <img class="project-img img-fluid" src="images/Traffic.jpeg" alt="img">
+                    <div class="project-description p-5 position-absolute bottom-0 start-0">
+                        <h4 class="text-white">Nigerian Road Traffic Crash Analysis</h4>
+                        <a href="Road traffic analysis.html" class="text-white text-decoration-underline">View Project</a>
+                    </div>
+                </div>
+            </div>
+            <div class="item poster col-md-4 p-3">
+                <div class="project-content position-relative bg-black">
+                    <img class="project-img img-fluid" src="images/supermarket.jpeg" alt="img">
+                    <div class="project-description p-5 position-absolute bottom-0 start-0">
+                        <h4 class="text-white"> Supermarket Analysis</h4>
+                        <a href="https://github.com/Kenanthony2/Supermarket-sales-analysis" class="text-white text-decoration-underline">View Project</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-center mt-5">
+            <a href="https://github.com/Kenanthony2" class="btn btn-dark me-4">
+                Other Projects
+            </a>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="container padding-medium" data-aos="fade-up">
+            <div class="row justify-content-center">
+                <div class="col-md-8 text-center">
+                    <h3 class="display-1 fw-bold">
+                        Let’s work together
+                    </h3>
+                    <p>
+                        I’m available for freelance work. Have any projects in your mind? <br>
+                        Just feel free to contact me
+                    </p>
+                </div>
+            </div>
+
+            <ul class="d-flex gap-5 list-unstyled justify-content-center my-3">
+                <li>
+                    <a href="mailto:kenanthony277@gmail.com" class="contact-link" title="Email">
+                    <i class="fas fa-envelope fa-lg"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/Kenanthony2" target="_blank" class="contact-link" title="GitHub">
+                    <i class="fab fa-github fa-lg"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://linkedin.com/in/ken-anthony" target="_blank" class="contact-link" title="LinkedIn">
+                    <i class="fab fa-linkedin fa-lg"></i>
+                    </a>
+                </li>
+                </ul>
+        </div>
+        <footer class="border-top border-dark-subtle py-4">
+            <div class="container d-md-flex justify-content-between align-items-center mt-3">
+                <p class="mb-0">© 2025 Ken Anthony. All rights reserved.</p>
+            </div>
+        </footer>
+    </section>
+
+
+    <!-- script ================================================== -->
+    <script src="js/jquery-1.11.0.min.js"></script>
+
+    <!-- Bootstarp script ================================================== -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+
+    <!-- Swiper script ================================================== -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <!--iconify script ================================================== -->
+    <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.7/dist/iconify-icon.min.js"></script>
+
+
+    <script src="js/plugins.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
